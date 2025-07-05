@@ -24,11 +24,20 @@ h1{
 .stock_list{
     
     border: white;
-    border-style: double;
+  
      box-sizing: border-box;
     width:32%;
     height: 70%;
     padding: 50px;
+    padding-top: 8%;
     
 }
+.symbol {
+  
+  font-weight: bold;
+}
+.price {
+  color: green;
+}
+
 
