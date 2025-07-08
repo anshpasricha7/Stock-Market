@@ -23,13 +23,12 @@ h1{
 }
 .stock_list{
     
-    border: white;
-  
+   
      box-sizing: border-box;
     width:32%;
     height: 70%;
     padding: 50px;
-    padding-top: 8%;
+    padding-top: 3%;
     
 }
 .symbol {
@@ -38,6 +37,13 @@ h1{
 }
 .price {
   color: green;
+}
+.container{
+    margin: 3%;
+}
+.input_container {
+    padding-right: 10%;
+    text-align: right;
 }
 
 

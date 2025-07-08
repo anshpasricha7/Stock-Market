@@ -10,7 +10,7 @@ function loadStockPrices() {
   stocks.innerHTML = ""; // Clear old content
 
   const fetches = symbols.map(function(symbol){
-    fetch(`https://finnhub.io/api/v1/quote?symbol=${symbol}&token=${apiKey}`)
+    return fetch(`https://finnhub.io/api/v1/quote?symbol=${symbol}&token=${apiKey}`)
       .then(response => response.json())
       .then(data => ({
         symbol,
