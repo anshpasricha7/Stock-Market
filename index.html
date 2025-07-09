@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- ✅ Chart.js must come before your JS file -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- ✅ Your JS file (after Chart.js is loaded) -->
+    <script defer src="script.js"></script>
+
 </head>
 <body>
     <h1>Stocks</h1>
@@ -15,7 +21,14 @@
     </div>
     <div class="container">
 
-        <div class="chart"></div>
+        <div class="chart">
+            <div class="chart-area"><canvas id="myChart" ></canvas>
+
+            </div>
+            <div class="companies">
+                
+            </div>
+        </div>
         <div class="stock_list"></div>
 
     </div>
