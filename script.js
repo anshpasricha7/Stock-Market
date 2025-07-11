@@ -1,6 +1,11 @@
 
 
 const apiKey = `d1khuahr01qt8foon0q0d1khuahr01qt8foon0qg`;
+
+fetch(`https://finnhub.io/api/v1/stock/symbol?exchange=US&token=${apiKey}`)
+  .then(res => res.json())
+  .then(data => console.log(data));
+
 const symbols = [
   'AAPL', 'MSFT', 'GOOGL', 'AMZN', 'TSLA',
   'META', 'NVDA', 'NFLX', 'INTC', 'IBM'
@@ -152,4 +157,8 @@ setInterval(updateAllChartData, 60000);
 updateAllChartData(); // Initial load
 
 setInterval(loadStockPrices, 60000);
+
+document.querySelector(`.search`).addEventListener('click', function() {
+   window.open('search_stock_page.html', '_blank');
+});
 
